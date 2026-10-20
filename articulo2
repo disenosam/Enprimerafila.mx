@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Fashion Week Guadalajara vs. CDMX: quién asistió, quién invitó y qué buscaba cada edición de Volvo Fashion Week México 2026.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E👗%3C/text%3E%3C/svg%3E">
+<title>Guadalajara vs. CDMX · Primera Fila</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;1,6..96,500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ECE9F3; --surface:#F7F5FB; --ink:#22163A; --muted:#5E5575; --accent:#2B35E8; --on-accent:#fff; --line:#CFC9DE;
+  --c1:#2B35E8; --c2:#E8A5C4; --c3:#22163A; --c4:#C9F0DD;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#140D24; --surface:#1E1533; --ink:#F1EDFA; --muted:#B0A6CB; --accent:#8D95FF; --on-accent:#140D24; --line:#3A2F57;
+    --c1:#5B64FF; --c2:#B5638C; --c3:#F1EDFA; --c4:#2E6B53; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#140D24; --surface:#1E1533; --ink:#F1EDFA; --muted:#B0A6CB; --accent:#8D95FF; --on-accent:#140D24; --line:#3A2F57;
+  --c1:#5B64FF; --c2:#B5638C; --c3:#F1EDFA; --c4:#2E6B53; color-scheme:dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.55 "Instrument Sans",system-ui,sans-serif}
+.wrap{max-width:1100px;margin:0 auto;padding:0 22px}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+header.top{display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:1px solid var(--line)}
+header.top b{font:700 20px "Bodoni Moda",serif;text-decoration:none}
+header.top b a{text-decoration:none}
+header.top nav{display:flex;gap:22px;font-size:15px;color:var(--muted)}
+header.top nav a{text-decoration:none}
+header.top nav a:hover{color:var(--accent)}
+
+.back{display:inline-block;margin:28px 0 0;font-size:15px;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--accent)}
+
+.head{padding:28px 0 8px;max-width:900px}
+.head .tag{color:var(--muted);font-size:15px}
+.head h1{font:700 clamp(40px,7.2vw,84px)/.98 "Bodoni Moda",serif;letter-spacing:-.02em;margin:14px 0 22px}
+.head .dek{font:500 italic clamp(20px,2.4vw,26px)/1.35 "Bodoni Moda",serif;color:var(--muted);margin:0;max-width:44ch}
+.head .meta{margin:22px 0 0;font-size:14px;color:var(--muted)}
+
+/* Espacios para imagen */
+.fig{margin:36px 0}
+.fig.wide{margin-left:0;margin-right:0}
+.ph{
+  display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;
+  aspect-ratio:16/9;border-radius:2px;
+  border:1.5px dashed var(--muted);color:var(--muted);font-size:15px;
+  background:repeating-linear-gradient(135deg,transparent 0 14px,color-mix(in srgb,var(--line) 55%,transparent) 14px 15px);
+}
+.ph.tall{aspect-ratio:4/5;max-width:520px}
+article.body .fig.tall{max-width:520px}
+.fig img{display:block;width:100%;height:auto;border-radius:2px}
+.fig figcaption{margin-top:10px;font-size:14px;color:var(--muted)}
+
+article.body{max-width:68ch;margin:0 0 0 0;padding:20px 0 20px}
+article.body p{margin:0 0 1.15em;font-size:18px;line-height:1.7}
+article.body h2{font:700 clamp(28px,4vw,38px)/1.1 "Bodoni Moda",serif;margin:2.1em 0 .7em;letter-spacing:-.01em}
+article.body em{font-style:italic}
+article.body .fig{max-width:900px}
+
+.sources{max-width:68ch;margin:44px 0 0;padding:28px 0 0;border-top:1px solid var(--line)}
+.sources h3{font:700 24px "Bodoni Moda",serif;margin:0 0 14px}
+.sources ul{margin:0;padding-left:1.1em}
+.sources li{margin:0 0 10px;font-size:15.5px;color:var(--muted)}
+.sources a{color:var(--accent)}
+.sources .editorial{margin-top:20px;font-size:14px;font-style:italic;color:var(--muted)}
+
+.btn{display:inline-block;background:var(--accent);color:var(--on-accent);padding:12px 22px;border-radius:999px;text-decoration:none;font-weight:600}
+.more{margin:48px 0 0;padding:34px 0 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.more p{margin:0;font:700 clamp(22px,3vw,30px)/1.15 "Bodoni Moda",serif;max-width:24ch}
+footer{margin-top:60px;padding:26px 0 40px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+
+@media (max-width:760px){
+  header.top nav{display:none}
+}
+article.body h3{font:700 clamp(22px,3vw,28px)/1.15 "Bodoni Moda",serif;margin:1.8em 0 .6em}
+article.body ul{margin:0 0 1.15em;padding-left:1.2em}
+article.body li{margin:0 0 .45em;font-size:18px;line-height:1.6}
+article.body a{color:var(--accent)}
+.tbl{overflow-x:auto;margin:0 0 1.3em}
+.tbl table{border-collapse:collapse;width:100%;min-width:520px;font-size:16px}
+.tbl th,.tbl td{text-align:left;vertical-align:top;padding:12px 14px;border-bottom:1px solid var(--line)}
+.tbl th{font:700 20px "Bodoni Moda",serif;border-bottom:1.5px solid var(--ink)}
+article.body p.closing{font:700 clamp(22px,3vw,30px)/1.2 "Bodoni Moda",serif;margin-top:1.6em}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <b><a href="index.html">Primera Fila</a></b>
+    <nav aria-label="Principal"><a href="index.html#cronicas">Crónicas</a><a href="index.html#acerca">Acerca de</a><a href="index.html#contacto">Contacto</a></nav>
+  </header>
+
+  <a class="back" href="index.html#cronicas">← Todas las crónicas</a>
+
+  <div class="head">
+    <div class="tag">Pasarela · Análisis · Volvo Fashion Week México 2026</div>
+    <h1>Fashion Week Guadalajara vs. CDMX: quién estuvo, quién invitó y qué buscaba cada edición</h1>
+    <p class="dek">La diferencia entre las dos ediciones de Volvo Fashion Week México no se entiende únicamente mirando las pasarelas. También hay que observar a las celebridades, los medios, los creadores de contenido, las marcas patrocinadoras y las instituciones que participaron.</p>
+    <p class="meta">Por Samantha · Octubre de 2026</p>
+  </div>
+
+  <!-- 1 · PORTADA
+       Para usar una foto real: borra el <div class="ph">…</div> y pon
+       <img src="nombre-de-la-foto.jpg" alt="Descripción" width="1600" height="900" loading="lazy"> -->
+    <figure class="fig">
+      <div class="ph" role="img" aria-label="Espacio reservado para imagen">Espacio para imagen · PORTADA (16:9)<br>Foto de Guadalajara o de CDMX</div>
+      <figcaption>Pie de foto · Crédito: [fuente]</figcaption>
+    </figure>
+
+  <article class="body">
+    <h2>Guadalajara: celebridades, autoridades y creadores de contenido</h2>
+
+    <p>Del 14 al 17 de abril de 2026, Guadalajara recibió Volvo Fashion Week México con un formato que llevó las presentaciones a distintos espacios de la ciudad. Según Jalisco TV, el evento reunió aproximadamente a 5,000 invitados, contó con 31 aliados estratégicos, más de 30 medios de comunicación y 50 creadores de contenido. Estas cifras fueron publicadas por el medio estatal; no equivalen a un registro independiente de asistentes únicos. <a href="https://jaliscotv.com/volvo-fashion-week-jalisco/" rel="noopener">Fuente: Jalisco TV</a></p>
+
+    <p>Entre las personalidades documentadas estuvieron:</p>
+
+    <ul>
+      <li><strong>Aislinn Derbez</strong>, actriz.</li>
+      <li><strong>Eréndira Ibarra</strong>, actriz.</li>
+      <li><strong>Altair Jarabo</strong>, actriz.</li>
+      <li><strong>Manolo Caro</strong>, director y productor.</li>
+      <li><strong>Miguel Rodarte</strong>, actor.</li>
+      <li><strong>Ceci de la Cueva</strong>, actriz y cantante.</li>
+      <li><strong>Maye Villa de Lemus</strong>, presidenta del DIF Jalisco.</li>
+    </ul>
+
+    <p>La presencia de estos perfiles muestra que el público del evento no se limitó a profesionales de la moda: también incluyó figuras del entretenimiento y representantes institucionales. ¡HOLA! México documentó a Aislinn Derbez, Altair Jarabo, Eréndira Ibarra y Manolo Caro entre los asistentes del segundo día; Jalisco TV reportó a Ceci de la Cueva, Miguel Rodarte y Maye Villa de Lemus, entre otros. <a href="https://www.hola.com/us-es/moda/20260416896184/volvo-fashion-week-mexico-guadalajara-dia-2-olmos-flores-abel-lopez-alfredo-martinez-arrre/" rel="noopener">¡HOLA! México</a> · <a href="https://jaliscotv.com/volvo-fashion-week-jalisco/" rel="noopener">Jalisco TV</a></p>
+
+    <h3>¿Quién los invitó?</h3>
+
+    <p>Aquí hay que distinguir entre lo documentado y lo que no se ha hecho público.</p>
+
+    <p>El evento fue organizado por Volvo Fashion Week México con participación del Gobierno de Jalisco, la Secretaría de Turismo y el DIF estatal. Hubo una conferencia de prensa, una red carpet y un cóctel de inauguración. Sin embargo, las fuentes consultadas no publican una lista individual que permita afirmar quién invitó personalmente a cada celebridad.</p>
+
+    <p>En cambio, sí se conocen relaciones concretas con marcas: David Gandy desfiló para Hackett London y la presentación de Alfredo Martínez contó con IQOS como patrocinador. Esto demuestra la participación de las marcas en el programa, pero no prueba que ellas hayan invitado a todos los famosos presentes. <a href="https://jaliscotv.com/volvo-fashion-week-jalisco/" rel="noopener">Fuente: Jalisco TV</a></p>
+
+    <h3>¿Qué dijeron sobre el evento?</h3>
+
+    <p>Michelle Fridman Hirsch, secretaria de Turismo de Jalisco, defendió el valor económico y cultural de la plataforma. Su argumento fue que la moda puede generar actividad económica, proyectar el talento local y fortalecer la identidad de la región.</p>
+
+    <p>Por su parte, Maye Villa de Lemus destacó la moda como fuente de empleo y vía de desarrollo para miles de personas.</p>
+
+    <p>Las declaraciones públicas se concentraron, por tanto, en la industria creativa, el turismo y la economía local, no solamente en las tendencias de temporada. <a href="https://jaliscotv.com/volvo-fashion-week-jalisco/" rel="noopener">Fuente: Jalisco TV</a></p>
+
+    <h2>Ciudad de México: medios especializados, marcas y encuentros profesionales</h2>
+
+    <p>La edición de CDMX se celebró del 12 al 17 de octubre de 2026, con actividades en Casa Club y Maravilla Studios. Su programa incluyó desfiles, conferencias y colaboraciones con marcas, además de actividades con instituciones educativas. <a href="https://fashionweek.mx/" rel="noopener">Calendario oficial</a></p>
+
+    <p>En este caso, una de las evidencias más útiles para conocer quién asistió fuera de las pasarelas es la cobertura de los medios.</p>
+
+    <!-- 2 · CDMX
+       Para usar una foto real: borra el <div class="ph">…</div> y pon
+       <img src="nombre-de-la-foto.jpg" alt="Descripción" width="1600" height="900" loading="lazy"> -->
+    <figure class="fig">
+      <div class="ph" role="img" aria-label="Espacio reservado para imagen">Espacio para imagen · CDMX (16:9)<br>Invitados, primera fila o red carpet</div>
+      <figcaption>Pie de foto · Crédito: [fuente]</figcaption>
+    </figure>
+
+    <p><strong>CRXSS Magazine</strong> publicó <em>The Guest List</em>, un reportaje fotográfico de asistentes a la edición capitalina, con fotografías de Alexis Ortega y cobertura de Roberto Coss. La publicación describe la presencia de personalidades del entretenimiento, la moda y la industria creativa, aunque la versión consultada no identifica textualmente a todos los retratados. <a href="https://crxssmagazine.com.mx/articulos/the-guest-list-volvo-fashion-week-mexico-2026" rel="noopener">Ver reportaje de CRXSS</a></p>
+
+    <p>También existe evidencia directa de cómo funcionan algunas invitaciones. <em>RRevista</em> publicó una crónica del desfile de Alfredo Martínez y otra de Efecto Perfecto en las que la autora señala expresamente que asistió <strong>invitada por IQOS</strong>, patrocinador de ambas presentaciones. En el primer caso, describe el acceso a primera fila y un obsequio que incluía lentes y una cámara; en el segundo, cuenta su experiencia durante el desfile de Efecto Perfecto. <a href="https://rrevista.com.mx/2026/10/17/alfredo-martinez-y-el-arte-de-vestir-el-poder-femenino/" rel="noopener">Crónica de Alfredo Martínez</a> · <a href="https://rrevista.com.mx/2026/10/17/efecto-perfecto-una-dosis-de-frescura-en-volvo-fashion-week-mexico/" rel="noopener">Crónica de Efecto Perfecto</a></p>
+
+    <p>Este es un ejemplo concreto de una relación que sí puede documentarse: un medio identifica a la marca que le extendió la invitación y explica la experiencia que tuvo gracias a ella. No permite concluir que todos los asistentes fueran invitados por IQOS ni que todos recibieran los mismos beneficios.</p>
+
+    <h3>¿Qué dijeron los organizadores de CDMX?</h3>
+
+    <p>Cory Crespo, director de Fashion Week México, describió la edición como algo más amplio que una semana de desfiles: un espacio de encuentro entre moda, diseño, educación, innovación, movilidad, tecnología e industria.</p>
+
+    <p>Volvo Car México, por su parte, explicó que su participación buscaba conectar la innovación, la seguridad y la sustentabilidad de la marca con el talento de diseñadores y creativos mexicanos. <a href="https://fashionweekmx.prezly.com/volvo-fashion-week-mexico-consolida-casi-dos-decadas-de-impulso-al-talento-mexicano-presentando-un-solido-calendario-de-disenadores-nacionales-e-internacionales-qe8118" rel="noopener">Comunicado oficial</a></p>
+
+    <h2>¿Cuál era el objetivo de cada edición?</h2>
+
+    <div class="tbl">
+      <table>
+        <thead><tr><th scope="col">Guadalajara</th><th scope="col">Ciudad de México</th></tr></thead>
+        <tbody>
+          <tr><td>Proyectar la ciudad como destino de moda y turismo creativo.</td><td>Dar visibilidad al talento mexicano ante la industria, los medios y nuevas audiencias.</td></tr>
+          <tr><td>Integrar las presentaciones con espacios urbanos y culturales.</td><td>Combinar pasarelas con conferencias, instituciones educativas y colaboraciones comerciales.</td></tr>
+          <tr><td>Vincular la moda con la economía creativa regional.</td><td>Consolidar una plataforma nacional que conecte diseño, marcas y profesionales.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>Estos objetivos proceden de los comunicados institucionales y de la programación anunciada. No son pruebas de que todos los resultados se hayan alcanzado.</p>
+
+    <h2>La diferencia que importa: quién está en la lista y quién hace posible la invitación</h2>
+
+    <p>La comparación deja una cuestión abierta. En Guadalajara hay cifras publicadas de asistencia y participación de creadores de contenido; en CDMX hay reportajes fotográficos y ejemplos de medios que identifican a las marcas que los invitaron. Pero todavía no existe, en las fuentes consultadas, un registro público comparable que permita saber exactamente quién asistió a ambas ediciones, quién invitó a cada persona y qué publicaciones o colaboraciones surgieron de esos encuentros.</p>
+
+    <p>Para reconstruir esa red, la evidencia más útil sería cruzar cuatro tipos de información: las publicaciones de los asistentes, los créditos de las fotografías, las invitaciones atribuidas expresamente a marcas o agencias y las colaboraciones anunciadas por las propias partes.</p>
+
+    <p class="closing">Esa es la diferencia entre contar quién fue a Fashion Week y entender cómo funciona la red de relaciones que hay detrás.</p>
+  </article>
+
+  <div class="more">
+    <p>¿Quieres que cubra tu próximo evento?</p>
+    <a class="btn" href="index.html#contacto">Escríbeme</a>
+  </div>
+
+  <footer>© 2026 Primera Fila. Todos los derechos reservados.</footer>
+</div>
+</body>
+</html>
