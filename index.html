@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Primera Fila: cobertura de prensa de pasarelas, semanas de la moda y eventos del sector.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E👗%3C/text%3E%3C/svg%3E">
+<title>Primera Fila · Prensa de moda</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;1,6..96,500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ECE9F3; --surface:#F7F5FB; --ink:#22163A; --muted:#5E5575; --accent:#2B35E8; --on-accent:#fff; --line:#CFC9DE;
+  --c1:#2B35E8; --c2:#E8A5C4; --c3:#22163A; --c4:#C9F0DD;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#140D24; --surface:#1E1533; --ink:#F1EDFA; --muted:#B0A6CB; --accent:#8D95FF; --on-accent:#140D24; --line:#3A2F57;
+    --c1:#5B64FF; --c2:#B5638C; --c3:#F1EDFA; --c4:#2E6B53; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#140D24; --surface:#1E1533; --ink:#F1EDFA; --muted:#B0A6CB; --accent:#8D95FF; --on-accent:#140D24; --line:#3A2F57;
+  --c1:#5B64FF; --c2:#B5638C; --c3:#F1EDFA; --c4:#2E6B53; color-scheme:dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.55 "Instrument Sans",system-ui,sans-serif}
+.wrap{max-width:1100px;margin:0 auto;padding:0 22px}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+header.top{display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:1px solid var(--line)}
+header.top b{font:700 20px "Bodoni Moda",serif}
+header.top nav{display:flex;gap:22px;font-size:15px;color:var(--muted)}
+header.top nav a{text-decoration:none}
+header.top nav a:hover{color:var(--accent)}
+
+.hero{padding:56px 0 40px}
+.hero h1{font:700 clamp(64px,17vw,190px)/.86 "Bodoni Moda",serif;letter-spacing:-.03em;margin:0}
+.hero h1 i{font-weight:500;display:block;margin-left:.6em}
+.hero p{max-width:46ch;margin:28px 0 0;color:var(--muted);font-size:19px}
+
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin:36px 0 26px}
+.chips button{font:500 15px "Instrument Sans",sans-serif;padding:9px 18px;border-radius:999px;border:1.5px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer}
+.chips button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:22px}
+.post{grid-column:span 4;display:flex;flex-direction:column;text-decoration:none}
+.post.big{grid-column:span 8}
+.post .pic{aspect-ratio:4/5;border-radius:2px;margin-bottom:14px}
+.post.big .pic{aspect-ratio:16/10}
+.post small{color:var(--muted);font-size:14px}
+.post h3{font:700 24px/1.15 "Bodoni Moda",serif;margin:6px 0 8px}
+.post.big h3{font-size:clamp(30px,4.4vw,44px)}
+.post p{margin:0;color:var(--muted);font-size:16px}
+.post:hover h3{color:var(--accent)}
+.post[hidden]{display:none}
+.pic.a{background:var(--c1)} .pic.b{background:var(--c2)} .pic.c{background:var(--c3)} .pic.d{background:var(--c4)}
+.pic.a{background:linear-gradient(160deg,var(--c1) 55%,var(--c2) 55%)}
+.note{margin-top:22px;font-size:14px;color:var(--muted)}
+
+section.about{margin-top:80px;padding:44px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:40px}
+section.about h2{font:700 clamp(30px,5vw,48px)/1.05 "Bodoni Moda",serif;margin:0}
+section.about p{margin:0 0 14px;max-width:52ch}
+.btn{display:inline-block;background:var(--accent);color:var(--on-accent);padding:12px 22px;border-radius:999px;text-decoration:none;font-weight:600}
+footer{padding:26px 0 40px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+
+@media (max-width:760px){
+  header.top nav{display:none}
+  .post,.post.big{grid-column:span 12}
+  section.about{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <b>Primera Fila</b>
+    <nav aria-label="Principal"><a href="#cronicas">Crónicas</a><a href="#acerca">Acerca de</a><a href="#contacto">Contacto</a></nav>
+  </header>
+
+  <section class="hero">
+    <h1>Primera<i>Fila</i></h1>
+    <p>Cobertura de prensa de pasarelas, semanas de la moda y eventos del sector: lo que se vio, lo que se dijo y lo que viene.</p>
+  </section>
+
+  <div class="chips" role="group" aria-label="Filtrar por sección">
+    <button aria-pressed="true" data-f="todo">Todo</button>
+    <button aria-pressed="false" data-f="pasarela">Pasarela</button>
+    <button aria-pressed="false" data-f="backstage">Backstage</button>
+    <button aria-pressed="false" data-f="calle">Street style</button>
+    <button aria-pressed="false" data-f="entrevistas">Entrevistas</button>
+  </div>
+
+  <main id="cronicas" class="grid">
+    <a class="post big" href="#" data-s="pasarela"><div class="pic a"></div><small>Pasarela · Fashion Week</small><h3>Crónica del cierre: las colecciones que marcaron la semana</h3><p>Texto de ejemplo. Aquí va el resumen de tu nota principal, en dos líneas.</p></a>
+    <a class="post" href="#" data-s="backstage"><div class="pic b"></div><small>Backstage</small><h3>Lo que pasó detrás de la pasarela</h3><p>Maquillaje, peinado y los últimos minutos antes de salir.</p></a>
+    <a class="post" href="#" data-s="calle"><div class="pic d"></div><small>Street style</small><h3>Looks de la entrada: quién llegó cómo</h3><p>Los outfits del público y los invitados.</p></a>
+    <a class="post" href="#" data-s="entrevistas"><div class="pic c"></div><small>Entrevistas</small><h3>Conversación con una diseñadora emergente</h3><p>Su proceso, sus materiales y qué sigue.</p></a>
+    <a class="post" href="#" data-s="pasarela"><div class="pic b"></div><small>Pasarela</small><h3>Tendencias de temporada en cinco claves</h3><p>Colores, siluetas y telas que se repitieron.</p></a>
+  </main>
+  <p class="note">Las notas de arriba son ejemplos. Reemplaza títulos, resúmenes y secciones por tu cobertura real.</p>
+
+  <section class="about" id="acerca">
+    <h2>Prensa independiente, desde el asiento correcto.</h2>
+    <div>
+      <p>Soy [tu nombre], periodista y cronista de moda. Asisto a desfiles, showrooms y presentaciones para contarlos con criterio, buenas fotos y datos verificados.</p>
+      <p id="contacto">¿Quieres que cubra tu evento o colección? Escríbeme para acreditación, entrevistas o colaboraciones.</p>
+      <a class="btn" href="mailto:tu@correo.com">Escríbeme</a>
+    </div>
+  </section>
+
+  <footer>© 2026 Primera Fila. Todos los derechos reservados.</footer>
+</div>
+
+<script>
+document.querySelectorAll('.chips button').forEach(function(b){
+  b.addEventListener('click',function(){
+    document.querySelectorAll('.chips button').forEach(function(x){x.setAttribute('aria-pressed','false')});
+    b.setAttribute('aria-pressed','true');
+    var f=b.dataset.f;
+    document.querySelectorAll('.post').forEach(function(p){p.hidden=(f!=='todo'&&p.dataset.s!==f)});
+  });
+});
+</script>
+</body>
+</html>
