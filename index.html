@@ -62,6 +62,8 @@ header.top nav a:hover{color:var(--accent)}
 .post[hidden]{display:none}
 .pic.a{background:var(--c1)} .pic.b{background:var(--c2)} .pic.c{background:var(--c3)} .pic.d{background:var(--c4)}
 .pic.a{background:linear-gradient(160deg,var(--c1) 55%,var(--c2) 55%)}
+.pic{overflow:hidden}
+.pic img{display:block;width:100%;height:100%;object-fit:cover}
 .note{margin-top:22px;font-size:14px;color:var(--muted)}
 
 section.about{margin-top:80px;padding:44px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:40px}
@@ -98,7 +100,7 @@ footer{padding:26px 0 40px;border-top:1px solid var(--line);font-size:14px;color
   </div>
 
   <main id="cronicas" class="grid">
-    <a class="post big" href="articulo.html" data-s="pasarela"><div class="pic a"></div><small>Pasarela · Volvo Fashion Week México 2026</small><h3>La moda después de la pasarela: qué queda cuando se apagan las luces</h3><p>Campañas, colaboraciones y circulación digital: cómo la moda mexicana trasciende el desfile.</p></a>
+    <a class="post big" href="articulo.html" data-s="pasarela"><div class="pic a"><img src="portada.jpg" alt="Campaña de Volvo Fashion Week México 2026: dos modelos sentados sobre autos Volvo" width="1600" height="900"></div><small>Pasarela · Volvo Fashion Week México 2026</small><h3>La moda después de la pasarela: qué queda cuando se apagan las luces</h3><p>Campañas, colaboraciones y circulación digital: cómo la moda mexicana trasciende el desfile.</p></a>
     <a class="post" href="#" data-s="backstage"><div class="pic b"></div><small>Backstage</small><h3>Lo que pasó detrás de la pasarela</h3><p>Maquillaje, peinado y los últimos minutos antes de salir.</p></a>
     <a class="post" href="#" data-s="calle"><div class="pic d"></div><small>Street style</small><h3>Looks de la entrada: quién llegó cómo</h3><p>Los outfits del público y los invitados.</p></a>
     <a class="post" href="#" data-s="entrevistas"><div class="pic c"></div><small>Entrevistas</small><h3>Conversación con una diseñadora emergente</h3><p>Su proceso, sus materiales y qué sigue.</p></a>
@@ -128,7 +130,5 @@ document.querySelectorAll('.chips button').forEach(function(b){
   });
 });
 </script>
-</body>
-</html>
 </body>
 </html>
