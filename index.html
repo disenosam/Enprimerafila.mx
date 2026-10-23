@@ -66,21 +66,16 @@ header.top nav a:hover{color:var(--accent)}
 .pic img{display:block;width:100%;height:100%;object-fit:cover}
 .note{margin-top:22px;font-size:14px;color:var(--muted)}
 
-section.about{margin-top:80px;padding:44px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr minmax(220px,300px) 1fr;gap:40px;align-items:start}
+section.about{margin-top:80px;padding:44px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:40px}
 section.about h2{font:700 clamp(30px,5vw,48px)/1.05 "Bodoni Moda",serif;margin:0}
-.retrato{margin:0;width:100%;max-width:300px;justify-self:center}
-.retrato img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:2px}
 section.about p{margin:0 0 14px;max-width:52ch}
 .btn{display:inline-block;background:var(--accent);color:var(--on-accent);padding:12px 22px;border-radius:999px;text-decoration:none;font-weight:600}
-.btn.alt{background:transparent;color:var(--ink);border:1.5px solid var(--ink);padding:10.5px 22px;margin-left:8px}
-.btn.alt:hover{border-color:var(--accent);color:var(--accent)}
 footer{padding:26px 0 40px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
 
 @media (max-width:760px){
   header.top nav{display:none}
   .post,.post.big{grid-column:span 12}
   section.about{grid-template-columns:1fr}
-  .retrato{justify-self:start;max-width:320px}
 }
 </style>
 </head>
@@ -100,28 +95,28 @@ footer{padding:26px 0 40px;border-top:1px solid var(--line);font-size:14px;color
     <button aria-pressed="true" data-f="todo">Todo</button>
     <button aria-pressed="false" data-f="pasarela">Pasarela</button>
     <button aria-pressed="false" data-f="marcas">Marcas</button>
+    <button aria-pressed="false" data-f="oficios">Oficios</button>
   </div>
 
   <main id="cronicas" class="grid">
     <a class="post big" href="articulo.html" data-s="pasarela"><div class="pic a"><img src="portada.jpg" alt="Campaña de Volvo Fashion Week México 2026: dos modelos sentados sobre autos Volvo" width="1600" height="900"></div><small>Pasarela · Volvo Fashion Week México 2026</small><h3>La moda después de la pasarela: qué queda cuando se apagan las luces</h3><p>Campañas, colaboraciones y circulación digital: cómo la moda mexicana trasciende el desfile.</p></a>
     <a class="post" href="articulo4.html" data-s="pasarela"><div class="pic b"><img src="minena-tarjeta.jpg" alt="Una persona ajusta el moño de un saco rosa a una modelo frente a un espejo, entre prendas colgadas" width="759" height="954" loading="lazy"></div><small>Pasarela · Análisis</small><h3>Minena x adidas: la marca que cerró la semana</h3><p>Señorita Nena SS27, look por look, y lo que viene para la marca.</p></a>
-    <a class="post" href="articulo5.html" data-s="marcas"><div class="pic d"><img src="portada-articulo5.jpg" alt="Dos modelos sentados sobre autos Volvo en blanco y negro, entre luces y humo, campaña de Volvo Fashion Week México" width="900" height="1125" loading="lazy"></div><small>Marcas · Volvo</small><h3>Por qué una marca de autos fue el motor de Fashion Week México</h3><p>De 17 años con Mercedes-Benz a la era Volvo: cómo cambió la semana de la moda.</p></a>
-    <a class="post" href="articulo6.html" data-s="marcas"><div class="pic c"><img src="portada-articulo6.jpg" alt="Kit de prensa Doritos Racing: gorra, playera, bolsa de Doritos Nacho e invitación dentro de una caja de herramientas roja" width="900" height="1125" loading="lazy"></div><small>Marcas · Patrocinios</small><h3>Doritos, adidas y la moda: cuándo un patrocinio se vuelve colaboración</h3><p>Presentado por, en colaboración con o marca-creadora: tres formas de estar en la pasarela.</p></a>
+    <a class="post" href="articulo5.html" data-s="marcas"><div class="pic d"></div><small>Marcas · Volvo</small><h3>Por qué una marca de autos fue el motor de Fashion Week México</h3><p>De 17 años con Mercedes-Benz a la era Volvo: cómo cambió la semana de la moda.</p></a>
+    <a class="post" href="articulo6.html" data-s="marcas"><div class="pic c"></div><small>Marcas · Patrocinios</small><h3>Doritos, adidas y la moda: cuándo un patrocinio se vuelve colaboración</h3><p>Presentado por, en colaboración con o marca-creadora: tres formas de estar en la pasarela.</p></a>
     <a class="post" href="articulo2.html" data-s="pasarela"><div class="pic b"><img src="portada-articulo2.jpg" alt="Grupo de modelos posando juntas en el backstage de Volvo Fashion Week México" width="900" height="900" loading="lazy"></div><small>Pasarela · Análisis</small><h3>Guadalajara vs. CDMX: quién estuvo y quién invitó</h3><p>Dos ediciones de Volvo Fashion Week México y la red de invitados, medios y marcas detrás.</p></a>
+  <a class="post" href="articulo7.html" data-s="oficios"><div class="pic a"><img src="oficios-tarjeta.jpg" alt="Una invitada con vestido negro y capa blanca posa frente a un muro de fotografías e ilustraciones de moda" width="736" height="1103" loading="lazy" style="object-position:center 35%"></div><small>Industria · Oficios</small><h3>Quién hace la Fashion Week: el rol de cada oficio</h3><p>Diseñadores, stylists, fotógrafos, prensa y creadores: lo que aportó cada uno.</p></a>
   </main>
 
   <section class="about" id="acerca">
     <h2>Prensa independiente, desde el asiento correcto.</h2>
-    <figure class="retrato"><img src="samantha.jpg" alt="Samantha, periodista de moda, sentada en un restaurante, en blanco y negro" width="900" height="1125" loading="lazy"></figure>
     <div>
       <p>Soy Samantha, periodista de moda. Escribo sobre desfiles, showrooms y presentaciones para contarlos con criterio, buenas fotos y datos verificados.</p>
       <p id="contacto">¿Quieres que cubra tu evento o colección? Escríbeme para acreditación, entrevistas o colaboraciones.</p>
       <a class="btn" href="mailto:thedisenoclub@gmail.com">Escríbeme</a>
-      <a class="btn alt" href="https://www.instagram.com/samaneli00/" target="_blank" rel="noopener">Instagram</a>
     </div>
   </section>
 
-  <footer>© 2026 Primera Fila. Todos los derechos reservados. · <a href="https://www.instagram.com/samaneli00/" target="_blank" rel="noopener">@samaneli00</a></footer>
+  <footer>© 2026 Primera Fila. Todos los derechos reservados.</footer>
 </div>
 
 <script>
